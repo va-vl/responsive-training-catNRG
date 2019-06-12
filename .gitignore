@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.sublime*
+node_modules/
+build/
+npm-debug.*
+source/css/*.css
+stolenGulpfile.js

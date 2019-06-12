@@ -1,0 +1,33 @@
+{
+  "name": "cat-energy-responsive",
+  "version": "1.0.0",
+  "description": "Responsive web page of a cat food shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"I like big butts and I cannot lie\" && exit 1"
+  },
+  "author": "va-z",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^3.0.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-jpegoptim": "^6.0.0",
+    "imagemin-webp": "^5.1.0",
+    "posthtml-include": "^1.2.0",
+    "readable-stream": "^3.4.0"
+  }
+}
