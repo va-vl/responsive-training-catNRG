@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Подбор программы питания</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <picture>
+      <source media="(min-width:1440px)" type="image/svg+xml" srcset="./img/logo-desktop.svg">
+      <source media="(min-width:768px)" type="image/svg+xml" srcset="./img/logo-tablet.svg">
+      <img class="page-header__logo" src="./img/logo-mobile.svg" alt="Cat Energy" width="33" height="38">
+    </picture>
+    <svg class="page-header__logo--text" width="101" height="18" fill="#111111">
+      <use xlink:href="./img/sprite.svg#icon-logo-text"></use>
+    </svg>
+    <nav class="page-header__nav site-nav">
+      <button class="site-nav__toggle" type="button" aria-label="Показать/скрыть меню"></button>
+      <ul class="site-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="./index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="selection">
+      <h1 class="selection__heading">Подбор программы</h1>
+      <p class="selection__text">Заполните анкету и мы подберём программу питания для Вашего кота</p>
+      <form class="selection__form forms" action="#" method="post">
+        <fieldset class="forms__name">
+          <legend class="forms__legend visually-hidden">Расскажите о Вашем коте</legend>
+          <p class="forms__name-wrapper">
+            <label class="forms__label" for="name">Имя:<sup>*</sup></label>
+            <input class="forms__input" type="text" id="name" placeholder="Барсик">
+          </p>
+          <p class="forms__name-wrapper">
+            <label class="forms__label" for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="forms__input" type="text" id="weight" placeholder="7">
+          </p>
+          <p class="forms__name-wrapper">
+            <label class="forms__label" for="age">Возраст (лет):</label>
+            <input class="forms__input" type="text" id="age" placeholder="7">
+          </p>
+        </fieldset>
+        <fieldset class="forms__goals">
+          <legend class="forms__legend visually-hidden">Цели</legend>
+          <p class="forms__goals-wrapper">
+            <input class="forms__radio" type="radio" name="goal" value="slim" id="slim">
+            <label class="forms__label forms__label--radio" for="slim">Похудение</label>
+          </p>
+          <p class="forms__goals-wrapper">
+            <input class="forms__radio" type="radio" name="goal" value="gain" id="gain">
+            <label class="forms__label forms__label--radio" for="gain">Набор массы</label>
+          </p>
+          <p class="forms__goals-wrapper">
+            <input class="forms__radio" type="radio" name="goal" value="help" id="help">
+            <label class="forms__label forms__label--radio" for="help">Не знаю (нужен ваш совет)</label>
+          </p>
+        </fieldset>
+        <fieldset class="forms__contacts">
+          <legend class="forms__legend">Контактные данные (владельца кота)</legend>
+          <p class="forms__contacts-wrapper">
+            <label class="forms__label" for="email">E-mail:<sup>*</sup></label>
+            <input class="forms__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+            <svg class="forms__input-icon" width="17" height="13">
+              <use xlink:href="./img/sprite.svg#icon-mail"></use>
+            </svg>
+          </p>
+          <p class="forms__contacts-wrapper">
+            <label class="forms__label" for="phone">E-mail:<sup>*</sup></label>
+            <input class="forms__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+            <svg class="forms__input-icon" width="20" height="20">
+              <use xlink:href="./img/sprite.svg#icon-phone"></use>
+            </svg>
+          </p>
+        </fieldset>
+        <fieldset class="forms__comment">
+          <legend class="forms__legend">Комментарий</legend>
+          <textarea class="fomrs__textarea" name="comment" id="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="forms__additional">
+          <legend class="forms__legend">Дополнительно</legend>
+          <p class="forms__additional-wrapper">
+            <input class="forms__chekbox" type="checkbox" name="additional" value="sugar" id="sugar">
+            <label class="forms__label forms__label--checkbox" for="sugar">Сахарозаменитель</label>
+          </p>
+          <p class="forms__additional-wrapper">
+            <input class="forms__chekbox" type="checkbox" name="additional" value="water" id="water">
+            <label class="forms__label forms__label--checkbox" for="water">Питьевая вода</label>
+          </p>
+          <p class="forms__additional-wrapper">
+            <input class="forms__chekbox" type="checkbox" name="additional" value="milk" id="milk">
+            <label class="forms__label forms__label--checkbox" for="milk">Молоко</label>
+          </p>
+          <p class="forms__additional-wrapper">
+            <input class="forms__chekbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
+            <label class="forms__label forms__label--checkbox" for="vitamins">Витамины</label>
+          </p>
+        </fieldset>
+        <button class="forms__button button" type="submit">Отправить заявку</button>
+        <span class=""><sup>*</sup> — Обязательные поля</span>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="contacts">
+      <h2 class="contacts__heading visually-hidden">Наши контакты</h2>
+      <div class="contacts__wrapper">
+        <b class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/map-desktop.webp" type="image/webp">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet.webp" type="image/webp">
+          <source media="(min-width: 0px)" srcset="./img/map-mobile.webp" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="./img/map-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg">
+          <img class="contacts__map-image" src="./img/map-mobile.jpg" alt="Схема проезда">
+        </picture>
+      </div>
+    </section>
+    <section class="social">
+      <h2 class="social__heading visually-hidden">Наши социальные сети</h2>
+      <svg width="128" height="24" fill="#111111">
+        <use xlink:href="./img/sprite.svg#icon-logo-text"></use>
+      </svg>
+      <ul class="social__list">
+        <li>
+          <a class="social__link social__link--vk" href="https://vk.com" aria-label="VKontakte">
+            <svg width="22" height="12">
+              <use xlink:href="./img/sprite.svg#icon-social-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--insta" href="https://instagram.com" aria-label="Instagram">
+            <svg width="23" height="23">
+              <use xlink:href="./img/sprite.svg#icon-social-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--fb" href="https://facebook.com" aria-label="Facebook">
+            <svg width="14" height="28">
+              <use xlink:href="./img/sprite.svg#icon-social-fb"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="social__developer" href="https://htmlacademy.ru">
+        HTML Academy
+        <svg class="social__dev-logo" width="27" height="34" viewBox="0 0 27 34">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" />
+        </svg>
+      </a>
+    </section>
+  </footer>
+</body>
+
+</html>

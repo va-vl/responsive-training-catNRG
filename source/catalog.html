@@ -15,10 +15,10 @@
     <picture>
       <source media="(min-width:1440px)" type="image/svg+xml" srcset="./img/logo-desktop.svg">
       <source media="(min-width:768px)" type="image/svg+xml" srcset="./img/logo-tablet.svg">
-      <img class="page-header__logo" src="./img/logo-mobile.svg" alt="Cat Energy">
+      <img class="page-header__logo" src="./img/logo-mobile.svg" alt="Cat Energy" width="33" height="38">
     </picture>
     <svg class="page-header__logo--text" width="101" height="18" fill="#111111">
-      <use xlink:href="./img/sprite.svg#icon-logo-text">
+      <use xlink:href="./img/sprite.svg#icon-logo-text"></use>
     </svg>
     <nav class="page-header__nav site-nav">
       <button class="site-nav__toggle" type="button" aria-label="Показать/скрыть меню"></button>
@@ -261,6 +261,14 @@
     <section class="extra">
       <h2 class="extra__heading">Дополнительные товары</h2>
       <table class="extra__list extra-list">
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Объём</th>
+            <th>Стоимость</th>
+            <th>Купить</th>
+          </tr>
+        </thead>
         <tbody>
           <tr class="extra-list__item">
             <th class="extra-list__heading">Сахарозаменитель</th>
