@@ -12,14 +12,18 @@
 
 <body>
   <header class="page-header">
-    <picture>
-      <source media="(min-width:1440px)" type="image/svg+xml" srcset="./img/logo-desktop.svg">
-      <source media="(min-width:768px)" type="image/svg+xml" srcset="./img/logo-tablet.svg">
-      <img class="page-header__logo" src="./img/logo-mobile.svg" alt="Cat Energy" width="33" height="38">
-    </picture>
-    <svg class="page-header__logo--text" width="101" height="18" fill="#111111">
-      <use xlink:href="./img/sprite.svg#icon-logo-text"></use>
-    </svg>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="./index.html">
+        <picture>
+          <source media="(min-width:1440px)" type="image/svg+xml" srcset="./img/logo-desktop.svg">
+          <source media="(min-width:768px)" type="image/svg+xml" srcset="./img/logo-tablet.svg">
+          <img class="page-header__logo--image" src="./img/logo-mobile.svg" alt="Cat Energy" width="33" height="38">
+        </picture>
+      </a>
+      <svg class="page-header__logo--text" width="101" height="18" fill="#111111">
+        <use xlink:href="./img/sprite.svg#icon-logo-text"></use>
+      </svg>
+    </div>
     <nav class="page-header__nav site-nav">
       <button class="site-nav__toggle" type="button" aria-label="Показать/скрыть меню"></button>
       <ul class="site-nav__list site-list">
@@ -117,27 +121,27 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="contacts">
-      <h2 class="contacts__heading visually-hidden">Наши контакты</h2>
-      <div class="contacts__wrapper">
-        <b class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+    <section class="address">
+      <h2 class="address__heading visually-hidden">Наши контакты</h2>
+      <div class="address__wrapper">
+        <b class="address__tagline">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="address__text">ул. Большая Конюшенная, д. 19/8
+          <span>Санкт-Петербург</span></p>
       </div>
-      <div class="contacts__map">
+      <div class="address__map">
         <picture>
           <source media="(min-width: 1440px)" srcset="./img/map-desktop.webp" type="image/webp">
           <source media="(min-width: 768px)" srcset="./img/map-tablet.webp" type="image/webp">
           <source media="(min-width: 0px)" srcset="./img/map-mobile.webp" type="image/webp">
           <source media="(min-width: 1440px)" srcset="./img/map-desktop.jpg">
           <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg">
-          <img class="contacts__map-image" src="./img/map-mobile.jpg" alt="Схема проезда">
+          <img class="address__map-image" src="./img/map-mobile.jpg" alt="Схема проезда">
         </picture>
       </div>
     </section>
     <section class="social">
       <h2 class="social__heading visually-hidden">Наши социальные сети</h2>
-      <svg width="128" height="24" fill="#111111">
+      <svg class="social__logo" aria-label="Cat Energy" width="128" height="24" fill="#111111">
         <use xlink:href="./img/sprite.svg#icon-logo-text"></use>
       </svg>
       <ul class="social__list">
@@ -150,14 +154,14 @@
         </li>
         <li>
           <a class="social__link social__link--insta" href="https://instagram.com" aria-label="Instagram">
-            <svg width="23" height="23">
+            <svg width="16" height="16">
               <use xlink:href="./img/sprite.svg#icon-social-insta"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="social__link social__link--fb" href="https://facebook.com" aria-label="Facebook">
-            <svg width="14" height="28">
+            <svg width="10" height="19">
               <use xlink:href="./img/sprite.svg#icon-social-fb"></use>
             </svg>
           </a>

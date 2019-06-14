@@ -12,6 +12,7 @@
     "autoprefixer": "^9.6.0",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
+    "editorconfig": "^0.15.3",
     "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-ext-replace": "^0.3.0",

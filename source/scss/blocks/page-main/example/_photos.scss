@@ -1,0 +1,27 @@
+.photos__wrapper {
+  position: relative;
+
+  height: 241px;
+}
+
+.photos__before {
+  position: absolute;
+  bottom: 5px;
+  left: -13px;
+
+  transform-origin: bottom left;
+  transform: scale(1.06);
+}
+
+.photos__after {
+  position: absolute;
+  bottom: 0;
+  left: 23px;
+
+  display: none;
+}
+
+.photos__controls {
+  margin: 0 auto;
+  margin-top: 35px;
+}

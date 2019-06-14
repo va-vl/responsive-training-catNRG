@@ -1,0 +1,8 @@
+.catalog__heading {
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 42px - (60px - 36px)/2;
+
+  @include fs-lh(36px, 60px);
+  border-bottom: 1px solid #ededed;
+}

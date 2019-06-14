@@ -1,0 +1,31 @@
+.site-nav {
+    position: relative;
+}
+
+.site-nav__toggle {
+    position: absolute;
+    bottom: -41px;
+    right: 20px;
+
+    width: 24px;
+    height: 18px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 24px;
+        height: 2px;
+
+        background-color: #222222;
+        box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+    }
+}

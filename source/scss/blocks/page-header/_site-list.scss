@@ -1,0 +1,17 @@
+.site-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.site-list__item {
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.site-list__link {
+    @include fs-lh(20px, 65px);
+    text-decoration: none;
+    text-transform: uppercase;
+}

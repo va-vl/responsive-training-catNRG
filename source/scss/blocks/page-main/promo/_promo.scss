@@ -1,0 +1,61 @@
+.promo {
+  position: relative;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/index-background-mobile.jpg");
+
+  &::before {
+    content: "";
+    z-index: -1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 305px;
+
+    background-color: $green;
+  }
+
+  @media screen and (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
+.promo__heading {
+  margin: 0;
+  padding: 0;
+  padding-top: 29px;
+
+  color: #ffffff;
+  text-align: center;
+  @include fs-lh(36px, 36px);
+}
+
+.promo__tagline {
+  display: block;
+  margin-top: 28px;
+
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  @include fs-lh(14px, 14px);
+}
+
+.promo__can {
+  margin: 0 auto;
+  margin-top: 29px;
+}
+
+.promo__button {
+  margin: 0 auto;
+  margin-top: 3px;
+  padding: (40px - 18px)/2 0;
+  width: 280px;
+
+  @include fs-lh(14px, 18px);
+}

@@ -1,0 +1,84 @@
+body {
+  margin: 0 auto;
+  width: $mobile-width;
+
+  font-family: "Oswald", "Franklin Gothic Medium", "Futura", sans-serif;
+  font-weight: 400;
+  @include fs-lh(16px, 20px);
+
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+h1,
+h2,
+h3,
+b {
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+.button {
+  display: block;
+
+  color: #ffffff;
+  background-color: $green;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.6);
+    background-color: $dark-green;
+  }
+
+  &--show-all {
+    background-color: $grey;
+    color: #444444;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-grey;
+    }
+
+    &:active {
+      color: rgba(#444444, 0.6);
+      background-color: $dark-grey;
+    }
+  }
+
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

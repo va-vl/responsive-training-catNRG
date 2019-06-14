@@ -1,0 +1,40 @@
+.address__wrapper {
+  padding: 30px 20px;
+  column-count: 2;
+  column-width: 140px;
+  column-gap: 0;
+
+  &--index {
+    background-color: #ffffff;
+  }
+}
+
+.address__tagline {
+  @include fs-lh(16px, 20px);
+  text-transform: uppercase;
+}
+
+.address__text {
+  margin: 0;
+
+  @include Arial(14px, 20px);
+  color: #444444;
+}
+
+.address__map {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 139px;
+    left: 136px;
+
+    width: 55px;
+    height: 53px;
+
+    background-image: url("../img/map-pin-mobile.png");
+    background-repeat: no-repeat;
+  }
+}
