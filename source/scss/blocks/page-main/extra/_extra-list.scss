@@ -1,0 +1,49 @@
+.extra-list {
+  width: 280px;
+
+  thead {
+    display: none;
+  }
+
+  th,
+  td {
+    padding: 0;
+  }
+}
+
+.extra-list__item {
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.extra-list__heading {
+  width: 100%;
+  margin-left: 2px;
+  margin-bottom: 16px;
+
+  @include fs-lh (16px, 16px);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.extra-list__volume,
+.extra-list__price {
+  @include Arial(14px, 14px);
+  color: #444444;
+}
+
+.extra-list__button {
+  width: 280px;
+  margin-top: 17px;
+
+  @include fs-lh(16px, 40px);
+}

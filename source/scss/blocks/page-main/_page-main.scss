@@ -1,14 +1,23 @@
 .page-main__programs {
   padding: 0 20px;
-  margin-top: 22px;
+  padding-top: 22px;
 }
 
 .page-main__advantages {
   padding: 0 20px;
-  margin-top: 33px - (60px - 36px)/2;
-  margin-bottom: 50px - (18px - 14px)/2;
+  padding-top: 33px - (60px - 36px)/2;
+  padding-bottom: 50px - (18px - 14px)/2;
 }
 
 .page-main__catalog {
   padding-top: 32px - (60px - 36px)/2;
+}
+
+.page-main__extra {
+  padding-top: 32px;
+}
+
+.page-main__selection {
+  padding-top: 33px - (60px - 36px)/2;
+  padding-bottom: 33px;
 }

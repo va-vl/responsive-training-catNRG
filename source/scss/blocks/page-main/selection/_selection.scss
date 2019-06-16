@@ -1,0 +1,19 @@
+.selection__heading {
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 42px - (60px - 36px)/2 - (18px - 14px)/2;
+
+  @include fs-lh(36px, 60px);
+}
+
+.selection__text {
+  margin: 0;
+  margin-left: 20px;
+
+  @include fs-lh(14px, 18px);
+  text-transform: uppercase;
+}
+
+.selection__form {
+  margin-top: 42px - (18px - 14px)/2;
+}

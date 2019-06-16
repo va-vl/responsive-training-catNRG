@@ -40,7 +40,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="selection">
+    <section class="page-main__selection selection">
       <h1 class="selection__heading">Подбор программы</h1>
       <p class="selection__text">Заполните анкету и мы подберём программу питания для Вашего кота</p>
       <form class="selection__form forms" action="#" method="post">
@@ -75,48 +75,48 @@
           </p>
         </fieldset>
         <fieldset class="forms__contacts">
-          <legend class="forms__legend">Контактные данные (владельца кота)</legend>
+          <legend class="forms__legend"><span>Контактные данные (владельца кота)</span></legend>
           <p class="forms__contacts-wrapper">
             <label class="forms__label" for="email">E-mail:<sup>*</sup></label>
             <input class="forms__input" type="email" id="email" placeholder="kuklachev@gmail.com">
-            <svg class="forms__input-icon" width="17" height="13">
+            <svg class="forms__input-icon forms__input-icon--mail" width="17" height="13">
               <use xlink:href="./img/sprite.svg#icon-mail"></use>
             </svg>
           </p>
           <p class="forms__contacts-wrapper">
-            <label class="forms__label" for="phone">E-mail:<sup>*</sup></label>
+            <label class="forms__label" for="phone">Телефон:<sup>*</sup></label>
             <input class="forms__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
-            <svg class="forms__input-icon" width="20" height="20">
+            <svg class="forms__input-icon forms__input-icon--phone" width="20" height="20">
               <use xlink:href="./img/sprite.svg#icon-phone"></use>
             </svg>
           </p>
         </fieldset>
         <fieldset class="forms__comment">
           <legend class="forms__legend">Комментарий</legend>
-          <textarea class="fomrs__textarea" name="comment" id="comment"
+          <textarea class="forms__input forms__textarea" name="comment" id="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="forms__additional">
           <legend class="forms__legend">Дополнительно</legend>
           <p class="forms__additional-wrapper">
-            <input class="forms__chekbox" type="checkbox" name="additional" value="sugar" id="sugar">
+            <input class="forms__checkbox" type="checkbox" name="additional" value="sugar" id="sugar">
             <label class="forms__label forms__label--checkbox" for="sugar">Сахарозаменитель</label>
           </p>
           <p class="forms__additional-wrapper">
-            <input class="forms__chekbox" type="checkbox" name="additional" value="water" id="water">
+            <input class="forms__checkbox" type="checkbox" name="additional" value="water" id="water">
             <label class="forms__label forms__label--checkbox" for="water">Питьевая вода</label>
           </p>
           <p class="forms__additional-wrapper">
-            <input class="forms__chekbox" type="checkbox" name="additional" value="milk" id="milk">
+            <input class="forms__checkbox" type="checkbox" name="additional" value="milk" id="milk">
             <label class="forms__label forms__label--checkbox" for="milk">Молоко</label>
           </p>
           <p class="forms__additional-wrapper">
-            <input class="forms__chekbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
+            <input class="forms__checkbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
             <label class="forms__label forms__label--checkbox" for="vitamins">Витамины</label>
           </p>
         </fieldset>
         <button class="forms__button button" type="submit">Отправить заявку</button>
-        <span class=""><sup>*</sup> — Обязательные поля</span>
+        <span class="forms__note"><sup>*</sup> — Обязательные поля</span>
       </form>
     </section>
   </main>
