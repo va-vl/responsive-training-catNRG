@@ -24,7 +24,7 @@
         <use xlink:href="./img/sprite.svg#icon-logo-text"></use>
       </svg>
     </div>
-    <nav class="page-header__nav site-nav">
+    <nav class="page-header__nav site-nav site-nav--closed no-js">
       <button class="site-nav__toggle" type="button" aria-label="Показать/скрыть меню"></button>
       <ul class="site-nav__list site-list">
         <li class="site-list__item">
@@ -47,72 +47,73 @@
         <fieldset class="forms__name">
           <legend class="forms__legend visually-hidden">Расскажите о Вашем коте</legend>
           <p class="forms__name-wrapper">
-            <label class="forms__label" for="name">Имя:<sup>*</sup></label>
-            <input class="forms__input" type="text" id="name" placeholder="Барсик">
+            <label class="input__label input__label--name" for="name">Имя:<sup>*</sup></label>
+            <input class="input__input input__input--name" type="text" id="name" placeholder="Барсик">
           </p>
           <p class="forms__name-wrapper">
-            <label class="forms__label" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="forms__input" type="text" id="weight" placeholder="7">
+            <label class="input__label input__label--name" for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="input__input input__input--name" type="number" min="0" id="weight" placeholder="7">
           </p>
           <p class="forms__name-wrapper">
-            <label class="forms__label" for="age">Возраст (лет):</label>
-            <input class="forms__input" type="text" id="age" placeholder="7">
+            <label class="input__label input__label--name" for="age">Возраст (лет):</label>
+            <input class="input__input input__input--name" type="number" min="0" id="age" placeholder="7">
           </p>
         </fieldset>
         <fieldset class="forms__goals">
           <legend class="forms__legend visually-hidden">Цели</legend>
           <p class="forms__goals-wrapper">
-            <input class="forms__radio" type="radio" name="goal" value="slim" id="slim">
-            <label class="forms__label forms__label--radio" for="slim">Похудение</label>
+            <input class="input__radio" type="radio" name="goal" value="slim" id="slim">
+            <label class="input__label input__label--radio" for="slim">Похудение</label>
           </p>
           <p class="forms__goals-wrapper">
-            <input class="forms__radio" type="radio" name="goal" value="gain" id="gain">
-            <label class="forms__label forms__label--radio" for="gain">Набор массы</label>
+            <input class="input__radio" type="radio" name="goal" value="gain" id="gain">
+            <label class="input__label input__label--radio" for="gain">Набор массы</label>
           </p>
           <p class="forms__goals-wrapper">
-            <input class="forms__radio" type="radio" name="goal" value="help" id="help">
-            <label class="forms__label forms__label--radio" for="help">Не знаю (нужен ваш совет)</label>
+            <input class="input__radio" type="radio" name="goal" value="help" id="help">
+            <label class="input__label input__label--radio" for="help">Не знаю (нужен ваш совет)</label>
           </p>
         </fieldset>
         <fieldset class="forms__contacts">
           <legend class="forms__legend"><span>Контактные данные (владельца кота)</span></legend>
           <p class="forms__contacts-wrapper">
-            <label class="forms__label" for="email">E-mail:<sup>*</sup></label>
-            <input class="forms__input" type="email" id="email" placeholder="kuklachev@gmail.com">
-            <svg class="forms__input-icon forms__input-icon--mail" width="17" height="13">
+            <label class="input__label input__label--contacts" for="email">E-mail:<sup>*</sup></label>
+            <input class="input__input input__input--contacts" type="email" id="email"
+              placeholder="kuklachev@gmail.com">
+            <svg class="input__input-icon input__input-icon--mail" width="17" height="13">
               <use xlink:href="./img/sprite.svg#icon-mail"></use>
             </svg>
           </p>
           <p class="forms__contacts-wrapper">
-            <label class="forms__label" for="phone">Телефон:<sup>*</sup></label>
-            <input class="forms__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
-            <svg class="forms__input-icon forms__input-icon--phone" width="20" height="20">
+            <label class="input__label input__label--contacts" for="phone">Телефон:<sup>*</sup></label>
+            <input class="input__input input__input--contacts" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+            <svg class="input__input-icon input__input-icon--phone" width="20" height="20">
               <use xlink:href="./img/sprite.svg#icon-phone"></use>
             </svg>
           </p>
         </fieldset>
         <fieldset class="forms__comment">
           <legend class="forms__legend">Комментарий</legend>
-          <textarea class="forms__input forms__textarea" name="comment" id="comment"
+          <textarea class="input__input input__textarea" name="comment" id="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="forms__additional">
           <legend class="forms__legend">Дополнительно</legend>
           <p class="forms__additional-wrapper">
-            <input class="forms__checkbox" type="checkbox" name="additional" value="sugar" id="sugar">
-            <label class="forms__label forms__label--checkbox" for="sugar">Сахарозаменитель</label>
+            <input class="input__checkbox" type="checkbox" name="additional" value="sugar" id="sugar">
+            <label class="input__label input__label--checkbox" for="sugar">Сахарозаменитель</label>
           </p>
           <p class="forms__additional-wrapper">
-            <input class="forms__checkbox" type="checkbox" name="additional" value="water" id="water">
-            <label class="forms__label forms__label--checkbox" for="water">Питьевая вода</label>
+            <input class="input__checkbox" type="checkbox" name="additional" value="water" id="water">
+            <label class="input__label input__label--checkbox" for="water">Питьевая вода</label>
           </p>
           <p class="forms__additional-wrapper">
-            <input class="forms__checkbox" type="checkbox" name="additional" value="milk" id="milk">
-            <label class="forms__label forms__label--checkbox" for="milk">Молоко</label>
+            <input class="input__checkbox" type="checkbox" name="additional" value="milk" id="milk">
+            <label class="input__label input__label--checkbox" for="milk">Молоко</label>
           </p>
           <p class="forms__additional-wrapper">
-            <input class="forms__checkbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
-            <label class="forms__label forms__label--checkbox" for="vitamins">Витамины</label>
+            <input class="input__checkbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
+            <label class="input__label input__label--checkbox" for="vitamins">Витамины</label>
           </p>
         </fieldset>
         <button class="forms__button button" type="submit">Отправить заявку</button>
@@ -176,6 +177,7 @@
       </a>
     </section>
   </footer>
+  <script src="./js/menu-opener.js" type="text/javascript"></script>
 </body>
 
 </html>
