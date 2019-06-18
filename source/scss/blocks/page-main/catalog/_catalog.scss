@@ -6,3 +6,13 @@
   @include fs-lh(36px, 60px);
   border-bottom: 1px solid #ededed;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .catalog__heading {
+    padding: 0 30px;
+    margin-bottom: 70px;
+
+    @include fs-lh(60px, 60px);
+    border: none;
+  }
+}

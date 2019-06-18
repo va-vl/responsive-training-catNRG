@@ -99,25 +99,29 @@
         </fieldset>
         <fieldset class="forms__additional">
           <legend class="forms__legend">Дополнительно</legend>
-          <p class="forms__additional-wrapper">
-            <input class="input__checkbox" type="checkbox" name="additional" value="sugar" id="sugar">
-            <label class="input__label input__label--checkbox" for="sugar">Сахарозаменитель</label>
-          </p>
-          <p class="forms__additional-wrapper">
-            <input class="input__checkbox" type="checkbox" name="additional" value="water" id="water">
-            <label class="input__label input__label--checkbox" for="water">Питьевая вода</label>
-          </p>
-          <p class="forms__additional-wrapper">
-            <input class="input__checkbox" type="checkbox" name="additional" value="milk" id="milk">
-            <label class="input__label input__label--checkbox" for="milk">Молоко</label>
-          </p>
-          <p class="forms__additional-wrapper">
-            <input class="input__checkbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
-            <label class="input__label input__label--checkbox" for="vitamins">Витамины</label>
-          </p>
+          <div class="forms__additional-grid">
+            <p class="forms__additional-wrapper">
+              <input class="input__checkbox" type="checkbox" name="additional" value="sugar" id="sugar">
+              <label class="input__label input__label--checkbox" for="sugar">Сахарозаменитель</label>
+            </p>
+            <p class="forms__additional-wrapper">
+              <input class="input__checkbox" type="checkbox" name="additional" value="water" id="water">
+              <label class="input__label input__label--checkbox" for="water">Питьевая вода</label>
+            </p>
+            <p class="forms__additional-wrapper">
+              <input class="input__checkbox" type="checkbox" name="additional" value="milk" id="milk">
+              <label class="input__label input__label--checkbox" for="milk">Молоко</label>
+            </p>
+            <p class="forms__additional-wrapper">
+              <input class="input__checkbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
+              <label class="input__label input__label--checkbox" for="vitamins">Витамины</label>
+            </p>
+          </div>
         </fieldset>
-        <button class="forms__button button" type="submit">Отправить заявку</button>
-        <span class="forms__note"><sup>*</sup> — Обязательные поля</span>
+        <div class="forms__button-wrapper">
+          <button class="forms__button button" type="submit">Отправить заявку</button>
+          <span class="forms__note"><sup>*</sup> — Обязательные поля</span>
+        </div>
       </form>
     </section>
   </main>
@@ -140,7 +144,7 @@
         </picture>
       </div>
     </section>
-    <section class="social">
+    <section class="page-footer__social social">
       <h2 class="social__heading visually-hidden">Наши социальные сети</h2>
       <svg class="social__logo" aria-label="Cat Energy" width="128" height="24" fill="#111111">
         <use xlink:href="./img/sprite.svg#icon-logo-text"></use>

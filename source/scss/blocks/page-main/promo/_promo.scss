@@ -54,8 +54,54 @@
 .promo__button {
   margin: 0 auto;
   margin-top: 3px;
-  padding: (40px - 18px)/2 0;
   width: 280px;
 
-  @include fs-lh(14px, 18px);
+  @include fs-lh(14px, 40px);
+}
+
+@media screen and (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+
+    background-image: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__heading {
+    padding: 0;
+    width: 427px;
+    margin-left: 90px;
+
+    color: #000000;
+    text-align: left;
+    @include fs-lh(60px, 60px);
+  }
+
+  .promo__tagline {
+    margin-top: 46px;
+    margin-left: 90px;
+
+    color: #000000;
+    text-align: left;
+    @include fs-lh(20px, 20px);
+  }
+
+  .promo__can {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .promo__button {
+    position: absolute;
+    left: 30px + 90px;
+    bottom: 529px;
+
+    width: 245px;
+    margin: 0;
+
+    @include fs-lh(20px, 52px);
+  }
 }

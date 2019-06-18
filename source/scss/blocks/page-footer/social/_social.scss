@@ -39,6 +39,7 @@
 .social__link {
   svg {
     display: block;
+
     fill: #676767;
   }
 
@@ -70,7 +71,6 @@
 .social__dev-logo {
   fill: #676767;
 
-
   &:hover,
   &:focus {
     fill: $green;
@@ -78,5 +78,55 @@
 
   &:active {
     fill: $green;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 30px;
+  }
+
+  .social__logo {
+    padding: 0;
+  }
+
+  .social__list {
+    min-height: auto;
+
+    border: none;
+
+    li:nth-child(2) {
+      margin: 0 28px;
+    }
+  }
+
+  .social__link {
+    display: block;
+
+    &--vk svg {
+      height: 16px;
+      width: 30px;
+    }
+
+    &--insta svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb svg {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  .social__developer {
+    padding: 0;
+  }
+
+  .social__dev-logo {
+    margin-left: 23px;
   }
 }

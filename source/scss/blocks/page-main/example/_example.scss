@@ -2,8 +2,6 @@
   padding: 0 20px;
   padding-top: 33px - (60px - 36px)/2;
   padding-bottom: 35px;
-
-  background-color: $grey;
 }
 
 .example__heading {
@@ -27,4 +25,96 @@
 
 .example__photos {
   margin-top: 25px;
+}
+
+.example--before {
+  background-color: $grey;
+
+  .controls__bar {
+    justify-content: flex-start;
+  }
+
+  .numbers__heading {
+    background-color: $grey;
+  }
+
+  .photos__after {
+    display: none;
+  }
+}
+
+.example--after {
+  background-color: $dark-grey;
+
+  .controls__bar {
+    justify-content: flex-end;
+  }
+
+  .numbers__heading {
+    background-color: $dark-grey;
+  }
+
+  .photos__before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .example {
+    position: relative;
+
+    padding: 0;
+    padding-top: 51px;
+  }
+
+  .example__wrapper {
+    padding: 0 30px;
+  }
+
+  .example__heading {
+    @include fs-lh(60px, 60px);
+  }
+
+  .example__text {
+    margin-top: 72px - (24px - 16px)/2;
+    width: 685px;
+
+    @include fs-lh(16px, 24px);
+  }
+
+  .example__numbers {
+    padding: 0 30px;
+    margin-top: 60px - (24px - 16px)/2;
+  }
+
+  .example__photos {
+    position: relative;
+
+    margin-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  .example--before {
+    background-color: #ffffff;
+
+    .numbers__heading {
+      background-color: #ffffff;
+    }
+
+    .photos::before {
+      background-color: $grey;
+    }
+  }
+
+  .example--after {
+    background-color: #ffffff;
+
+    .numbers__heading {
+      background-color: #ffffff;
+    }
+
+    .photos::before {
+      background-color: $dark-grey;
+    }
+  }
 }

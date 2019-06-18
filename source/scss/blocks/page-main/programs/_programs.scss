@@ -82,11 +82,11 @@
   &:hover,
   &:active {
     .programs__icon--short {
-        display: none;
+      display: none;
     }
 
     .programs__icon--long {
-        display: inline;
+      display: inline;
     }
   }
 
@@ -102,5 +102,56 @@
 
   &--long {
     display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .programs__card {
+    padding: 80px 50px 60px;
+  }
+
+  .programs__heading {
+    padding: 0;
+    margin-bottom: 33px - (24px - 16px)/2;
+
+    @include fs-lh(36px, 36px);
+
+    &::before {
+      left: 392px;
+      top: 9px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      left: 420px;
+      top: -3px;
+
+      width: 140px;
+      height: 194px;
+    }
+
+    &--gain::after {
+      left: 358px;
+      top: 59px;
+
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .programs__text {
+    width: 340px;
+    margin: 0;
+    margin-bottom: 65px;
+    padding: 0;
+
+    @include fs-lh(16px, 24px);
+    border: none;
+  }
+
+  .programs__link {
+    @include fs-lh(20px, 20px);
   }
 }

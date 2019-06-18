@@ -107,6 +107,11 @@
 
   &--contacts {
     padding-right: 40px;
+
+    &:focus,
+    &:active {
+      padding-right: 39px;
+    }
   }
 }
 
@@ -183,5 +188,101 @@
 
   &:active~.input__label--checkbox {
     opacity: 0.3;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .input__label {
+    @include fs-lh(20px, 20px);
+
+    &--name {
+      margin-right: 17px;
+    }
+
+    &--radio {
+      padding-left: 60px;
+
+      line-height: 40px;
+
+      &::before {
+        top: -6px;
+
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &--checkbox {
+      padding-left: 59px;
+
+      line-height: 40px;
+
+      &::before {
+        top: -5px;
+
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
+
+  .input__input {
+    padding: 0 20px;
+    height: 52px;
+
+    @include fs-lh(20px, 20px);
+
+    &:focus,
+    &:active {
+      padding: 0 19px;
+    }
+
+    &--contacts {
+      padding-right: 50px;
+
+      &:focus,
+      &:active {
+        padding-right: 49px;
+      }
+    }
+  }
+
+  .input__input-icon {
+    &--mail {
+      right: 20px;
+    }
+
+    &--phone {
+      right: 17px;
+    }
+  }
+
+  .input__radio {
+    &:checked+.input__label--radio::after {
+      top: 9px;
+      left: 15px;
+
+      transform-origin: center;
+      transform: scale(1.5);
+    }
+  }
+
+  .input__textarea {
+    padding: 16px;
+    width: 630px;
+    height: 174px;
+    margin-left: 70px;
+
+    &:focus,
+    &:active {
+      padding: 15px;
+    }
+  }
+
+  .input__checkbox {
+    &:checked~.input__label--checkbox::after {
+      top: 7px;
+      left: 10px;
+    }
   }
 }

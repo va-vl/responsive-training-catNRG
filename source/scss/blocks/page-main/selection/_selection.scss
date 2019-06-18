@@ -17,3 +17,23 @@
 .selection__form {
   margin-top: 42px - (18px - 14px)/2;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .selection__heading {
+    margin-left: 30px;
+    margin-bottom: 55px;
+
+    @include fs-lh(60px, 60px);
+  }
+
+  .selection__text {
+    width: 325px;
+    margin-left: 70px;
+
+    @include fs-lh(20px, 30px);
+  }
+
+  .selection__form {
+    margin-top: 65px;
+  }
+}

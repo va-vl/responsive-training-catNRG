@@ -12,6 +12,10 @@
 .address__tagline {
   @include fs-lh(16px, 20px);
   text-transform: uppercase;
+
+  span {
+    display: block;
+  }
 }
 
 .address__text {
@@ -36,5 +40,40 @@
 
     background-image: url("../img/map-pin-mobile.png");
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .address__wrapper {
+    padding: 65px 70px 60px;
+    column-width: 140px;
+    column-gap: 240px;
+  }
+
+  .address__tagline {
+    @include fs-lh(20px, 25px);
+  }
+
+  .address__text {
+    font-size: 16px;
+
+    text-align: right;
+
+    span {
+      display: block;
+      margin-top: 18px;
+    }
+  }
+
+  .address__map {
+    &::after {
+      top: 146px;
+      left: 333px;
+
+      width: 113px;
+      height: 106px;
+
+      background-image: url("../img/map-pin-tablet.png");
+    }
   }
 }

@@ -21,3 +21,33 @@
   padding-top: 33px - (60px - 36px)/2;
   padding-bottom: 33px;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .page-main__promo {
+    padding: 0 30px;
+    padding-top: 62px;
+  }
+
+  .page-main__programs {
+    padding: 0 30px;
+  }
+
+  .page-main__advantages {
+    padding: 0 30px;
+    padding-top: 53px;
+    padding-bottom: 55px;
+  }
+
+  .page-main__catalog {
+    padding-top: 62px;
+  }
+
+  .page-main__extra {
+    padding-top: 70px;
+  }
+
+  .page-main__selection {
+    padding-top: 62px;
+    padding-bottom: 72px;
+  }
+}

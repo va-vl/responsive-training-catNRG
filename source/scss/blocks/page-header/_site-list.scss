@@ -22,6 +22,30 @@
   }
 
   .site-list__item {
+    padding: (58px - 25px)/2 18px;
     border: none;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .site-list__link {
+    @include fs-lh (18px, 25px);
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      padding-bottom: 5px;
+
+      border-bottom: 2px solid $green;
+    }
   }
 }

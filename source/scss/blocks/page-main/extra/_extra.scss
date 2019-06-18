@@ -61,3 +61,53 @@
     fill: #ffffff;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .extra__heading {
+    padding: 0;
+    margin-bottom: 75px;
+
+    @include fs-lh(36px, 36px);
+
+    &::before {
+      content: "";
+
+      width: 28px;
+      height: 3px;
+      margin-right: 75px - 28px;
+      margin-top: 10px;
+
+      background-color: $green;
+    }
+
+    &::after {
+      content: "";
+
+      margin-left: 35px;
+      margin-top: 10px;
+    }
+  }
+
+  .extra__gift {
+    margin: 69px auto 79px;
+    padding: 75px 120px 70px 423px;
+
+    width: 708px;
+    height: 200px;
+
+    text-align: left;
+    background-image: url("../img/gift-photo-tablet.jpg");
+
+    @media screen and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+
+    span {
+      display: block;
+    }
+
+    &::before {
+      left: 91px;
+    }
+  }
+}
