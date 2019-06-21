@@ -110,7 +110,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 324px;
+    width: 100%;
     padding: 0 38px 40px;
 
     border: none;
@@ -181,5 +181,13 @@
 
   .item-list__data {
     border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .item-list {
+    padding: 0;
+    grid-template: auto / repeat(4, 245px);
+    column-gap: 80px;
   }
 }

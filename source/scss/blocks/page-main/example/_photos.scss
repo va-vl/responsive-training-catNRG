@@ -27,18 +27,6 @@
 @media screen and (min-width: $tablet-width) {
   .photos {
     position: relative;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 0;
-
-      width: 100%;
-      height: 462px;
-    }
   }
 
   .photos__wrapper {
@@ -59,5 +47,15 @@
 
   .photos__contorls {
     margin-top: 19px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .photos__before {
+    left: -76px;
+  }
+
+  .photos__after {
+    left: 0;
   }
 }

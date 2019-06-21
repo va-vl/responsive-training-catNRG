@@ -155,3 +155,54 @@
     @include fs-lh(20px, 20px);
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .programs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__card {
+    width: 570px;
+    margin: 0;
+    padding: 0 52px 62px;
+
+    box-sizing: border-box;
+  }
+
+  .programs__heading {
+    padding-top: 81px;
+    padding-left: 163px;
+    margin-bottom: 80px - (24px - 16px)/2;
+
+    @include fs-lh(36px, 36px);
+
+    &::before {
+      left: 0;
+      top: 47px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      left: 14px;
+      top: 41px;
+
+      width: 70px;
+      height: 97px;
+    }
+
+    &--gain::after {
+      left: -18px;
+      top: 69px;
+
+      height: 56px;
+      width: 134px;
+    }
+  }
+
+  .programs__text {
+    width: 100%;
+  }
+}

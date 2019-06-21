@@ -84,17 +84,20 @@
 @media screen and (min-width: $tablet-width) {
   .social {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 58px 30px;
   }
 
   .social__logo {
     padding: 0;
+    margin-right: 155px;
   }
 
   .social__list {
     min-height: auto;
+    width: auto;
+    margin: 0;
 
     border: none;
 
@@ -124,9 +127,20 @@
 
   .social__developer {
     padding: 0;
+    margin-left: auto;
   }
 
   .social__dev-logo {
     margin-left: 23px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .social {
+    padding: 60px 110px 54px;
+  }
+
+  .social__logo {
+    margin-right: 413px;
   }
 }

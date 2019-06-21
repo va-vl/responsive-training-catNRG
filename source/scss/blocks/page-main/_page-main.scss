@@ -33,9 +33,7 @@
   }
 
   .page-main__advantages {
-    padding: 0 30px;
-    padding-top: 53px;
-    padding-bottom: 55px;
+    padding: 53px 30px 55px;
   }
 
   .page-main__catalog {
@@ -49,5 +47,33 @@
   .page-main__selection {
     padding-top: 62px;
     padding-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-main__promo {
+    padding: 0;
+  }
+
+  .page-main__programs {
+    padding: 0 110px;
+  }
+
+  .page-main__advantages {
+    padding: 79px 110px 24px;
+  }
+
+  .page-main__catalog {
+    padding-top: 83px;
+  }
+
+  .page-main__extra {
+    padding-top: 79px;
+    padding-bottom: 86px;
+  }
+
+  .page-main__selection {
+    padding-top: 81px;
+    padding-bottom: 81px;
   }
 }

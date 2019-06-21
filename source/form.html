@@ -76,21 +76,23 @@
         </fieldset>
         <fieldset class="forms__contacts">
           <legend class="forms__legend"><span>Контактные данные (владельца кота)</span></legend>
-          <p class="forms__contacts-wrapper">
-            <label class="input__label input__label--contacts" for="email">E-mail:<sup>*</sup></label>
-            <input class="input__input input__input--contacts" type="email" id="email"
-              placeholder="kuklachev@gmail.com">
-            <svg class="input__input-icon input__input-icon--mail" width="17" height="13">
-              <use xlink:href="./img/sprite.svg#icon-mail"></use>
-            </svg>
-          </p>
-          <p class="forms__contacts-wrapper">
-            <label class="input__label input__label--contacts" for="phone">Телефон:<sup>*</sup></label>
-            <input class="input__input input__input--contacts" type="tel" id="phone" placeholder="8 (960) 900-60-90">
-            <svg class="input__input-icon input__input-icon--phone" width="20" height="20">
-              <use xlink:href="./img/sprite.svg#icon-phone"></use>
-            </svg>
-          </p>
+          <div class="forms__contacts-grid">
+            <p class="forms__contacts-wrapper">
+              <label class="input__label input__label--contacts" for="email">E-mail:<sup>*</sup></label>
+              <input class="input__input input__input--contacts" type="email" id="email"
+                placeholder="kuklachev@gmail.com">
+              <svg class="input__input-icon input__input-icon--mail" width="17" height="13">
+                <use xlink:href="./img/sprite.svg#icon-mail"></use>
+              </svg>
+            </p>
+            <p class="forms__contacts-wrapper">
+              <label class="input__label input__label--contacts" for="phone">Телефон:<sup>*</sup></label>
+              <input class="input__input input__input--contacts" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+              <svg class="input__input-icon input__input-icon--phone" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-phone"></use>
+              </svg>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="forms__comment">
           <legend class="forms__legend">Комментарий</legend>

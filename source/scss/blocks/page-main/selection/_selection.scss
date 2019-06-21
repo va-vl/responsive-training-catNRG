@@ -37,3 +37,18 @@
     margin-top: 65px;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .selection__heading {
+    margin-left: 110px;
+    margin-bottom: 60px;
+  }
+
+  .selection__text {
+    margin-left: 110px;
+  }
+
+  .selection__form {
+    margin-top: 68px;
+  }
+}

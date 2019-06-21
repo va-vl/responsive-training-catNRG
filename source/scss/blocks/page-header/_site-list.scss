@@ -22,7 +22,7 @@
   }
 
   .site-list__item {
-    padding: (58px - 25px)/2 18px;
+    padding: (59px - 25px)/2 18px;
     border: none;
 
     &:last-child {
@@ -47,5 +47,21 @@
 
       border-bottom: 2px solid $green;
     }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .site-list--index {
+    .site-list__link {
+      color: #ffffff;
+
+      &--current {
+        border-color: #ffffff;
+      }
+    }
+  }
+
+  .site-list__link {
+    font-size: 20px;
   }
 }

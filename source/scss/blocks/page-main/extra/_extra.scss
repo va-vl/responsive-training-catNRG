@@ -111,3 +111,34 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .extra__wrapper {
+    padding: 0 110px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .extra__list {
+    margin: 0;
+    margin-right: 80px;
+  }
+
+  .extra__gift {
+    padding: 195px (245px - 165px)/2 47px;
+    margin: 0;
+    width: 245px;
+    height: 289px;
+
+    text-align: center;
+    background-image: url("../img/gift-photo-desktop.jpg");
+
+    @media screen and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+
+    &::before {
+      left: 96px;
+    }
+  }
+}

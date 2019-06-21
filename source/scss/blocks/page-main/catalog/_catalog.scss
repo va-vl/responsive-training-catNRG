@@ -16,3 +16,15 @@
     border: none;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .catalog {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .catalog__heading {
+    padding: 0;
+    margin-bottom: 75px;
+  }
+}

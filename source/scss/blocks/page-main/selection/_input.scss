@@ -286,3 +286,10 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .input__textarea {
+    width: 1220px;
+    margin: 0 110px;
+  }
+}

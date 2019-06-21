@@ -74,10 +74,14 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .page-header__logo {
-    margin-top: 54px;
-    margin-left: 110px;
+  .page-header {
+    position: relative;
+    z-index: 2;
 
+    padding: 54px 110px 0;
+  }
+
+  .page-header__logo {
     &--image {
       width: 202px;
       height: 59px;

@@ -105,3 +105,59 @@
     @include fs-lh(20px, 52px);
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .promo {
+    margin-top: -54px - 59px;
+    margin-bottom: 80px;
+    min-height: 696px;
+    width: 100%;
+
+    background-image: url("../img/index-background-desktop.jpg");
+    background-size: 720px 696px;
+    background-position: top right;
+
+    @media screen and (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 720px;
+      z-index: -1;
+
+      display: block;
+      width: 720px;
+      height: 696px;
+
+      background-color: $green;
+    }
+  }
+
+  .promo__heading {
+    margin-left: 191px;
+    padding-top: 240px;
+  }
+
+  .promo__tagline {
+    margin-left: 191px;
+    margin-top: 46px;
+  }
+
+  .promo__can {
+    position: absolute;
+    left: 560px;
+    top: 142px;
+  }
+
+  .promo__button {
+    position: static;
+
+    margin-top: 53px;
+    margin-left: 191px;
+  }
+}

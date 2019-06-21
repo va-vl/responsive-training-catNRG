@@ -274,3 +274,103 @@
     margin-left: 62px;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .forms {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .forms__name {
+    padding: 0;
+    margin-left: 110px;
+    width: 570px;
+  }
+
+  .forms__goals {
+    width: 570px;
+    margin-left: 80px;
+  }
+
+  .forms__contacts {
+    width: 100%;
+
+    .forms__legend {
+      padding-top: 73px;
+    }
+  }
+
+  .forms__contacts-grid {
+    margin: 0 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .forms__contacts-wrapper {
+    margin: 0;
+    width: 570px;
+  }
+
+  .forms__comment {
+    width: 100%;
+
+    .forms__legend {
+      padding-top: 71px;
+      margin-bottom: 71px;
+    }
+  }
+
+  .forms__additional {
+    width: 100%;
+  }
+
+  .forms__additional-grid {
+    margin: 0 110px;
+    width: 1220px;
+    display: flex;
+  }
+
+  .forms__additional-wrapper {
+    width: 245px;
+    margin: 0;
+    margin-right: 80px;
+
+    &:nth-child(odd) {
+      width: 245px;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin: 0;
+    }
+
+  }
+
+  .forms__legend {
+    &::before {
+      width: 70px;
+      margin-right: 40px;
+    }
+
+    &::after {
+      margin-right: 40px;
+    }
+  }
+
+  .forms__button-wrapper {
+    margin-top: 61px;
+    margin-left: 110px;
+    width: 100%;
+  }
+
+  .forms__button {
+    width: 568px;
+  }
+
+  .forms__note {
+    margin-left: 84px;
+
+    @include fs-lh(16px, 16px);
+  }
+}

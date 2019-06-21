@@ -77,3 +77,35 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .address {
+    position: relative;
+  }
+
+  .address__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+
+    padding: 66px 76px 54px 76px;
+    width: 570px;
+    column-width: 165px;
+    column-gap: 80px;
+
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+
+  .address__text {
+    text-align: left;
+  }
+
+  .address__map {
+    &::after {
+      top: 150px;
+      left: 1009px;
+    }
+  }
+}
