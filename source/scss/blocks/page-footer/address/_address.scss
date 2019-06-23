@@ -1,111 +1,152 @@
 .address__wrapper {
-  padding: 30px 20px;
-  column-count: 2;
-  column-width: 140px;
-  column-gap: 0;
+	padding: 30px 20px;
+	column-count: 2;
+	column-width: 140px;
+	column-gap: 0;
 
-  &--index {
-    background-color: #ffffff;
-  }
+	&--index {
+		background-color: #ffffff;
+
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			width: 100%;
+		}
+
+		&::before {
+			height: 10px;
+
+			background-repeat: repeat;
+			background-size: 20px 20px;
+			background-image: radial-gradient(
+				circle at 10px 15px,
+				transparent 12px,
+				$grey 13px
+			);
+		}
+
+		&::after {
+			height: 15px;
+
+			background-size: 40px 20px;
+			background-image: radial-gradient(
+				circle at 10px -15px,
+				$grey 12px,
+				transparent 13px
+			);
+		}
+	}
 }
 
 .address__tagline {
-  @include fs-lh(16px, 20px);
-  text-transform: uppercase;
+	@include fs-lh(16px, 20px);
+	text-transform: uppercase;
 
-  span {
-    display: block;
-  }
+	span {
+		display: block;
+	}
 }
 
 .address__text {
-  margin: 0;
+	margin: 0;
 
-  @include Arial(14px, 20px);
-  color: #444444;
+	@include Arial(14px, 20px);
+	color: #444444;
 }
 
 .address__map {
-  position: relative;
+	position: relative;
 
-  &::after {
-    content: "";
+	&::after {
+		content: "";
 
-    position: absolute;
-    top: 139px;
-    left: 136px;
+		position: absolute;
+		top: 139px;
+		left: 136px;
 
-    width: 55px;
-    height: 53px;
+		width: 55px;
+		height: 53px;
 
-    background-image: url("../img/map-pin-mobile.png");
-    background-repeat: no-repeat;
-  }
+		background-image: url("../img/map-pin-mobile.png");
+		background-repeat: no-repeat;
+	}
 }
 
 @media screen and (min-width: $tablet-width) {
-  .address__wrapper {
-    padding: 65px 70px 60px;
-    column-width: 140px;
-    column-gap: 240px;
-  }
+	.address__wrapper {
+		padding: 65px 70px 60px;
+		column-width: 140px;
+		column-gap: 240px;
+	}
 
-  .address__tagline {
-    @include fs-lh(20px, 25px);
-  }
+	.address__tagline {
+		@include fs-lh(20px, 25px);
+	}
 
-  .address__text {
-    font-size: 16px;
+	.address__text {
+		font-size: 16px;
 
-    text-align: right;
+		text-align: right;
 
-    span {
-      display: block;
-      margin-top: 18px;
-    }
-  }
+		span {
+			display: block;
+			margin-top: 18px;
+		}
+	}
 
-  .address__map {
-    &::after {
-      top: 146px;
-      left: 333px;
+	.address__map {
+		&::after {
+			top: 146px;
+			left: 333px;
 
-      width: 113px;
-      height: 106px;
+			width: 113px;
+			height: 106px;
 
-      background-image: url("../img/map-pin-tablet.png");
-    }
-  }
+			background-image: url("../img/map-pin-tablet.png");
+		}
+	}
 }
 
 @media screen and (min-width: $desktop-width) {
-  .address {
-    position: relative;
-  }
+	.address {
+		position: relative;
+	}
 
-  .address__wrapper {
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    z-index: 2;
+	.address__wrapper {
+		position: absolute;
+		top: 95px;
+		left: 110px;
+		z-index: 2;
 
-    padding: 66px 76px 54px 76px;
-    width: 570px;
-    column-width: 165px;
-    column-gap: 80px;
+		padding: 66px 76px 54px 76px;
+		width: 570px;
+		column-width: 165px;
+		column-gap: 80px;
 
-    box-sizing: border-box;
-    background-color: #ffffff;
-  }
+		box-sizing: border-box;
+		background-color: #ffffff;
 
-  .address__text {
-    text-align: left;
-  }
+		&--index::before,
+		&--index::after {
+			display: none;
+		}
+	}
 
-  .address__map {
-    &::after {
-      top: 150px;
-      left: 1009px;
-    }
-  }
+	.address__text {
+		text-align: left;
+	}
+
+	.address__map {
+		&::after {
+			top: 150px;
+			left: 1009px;
+		}
+	}
 }
